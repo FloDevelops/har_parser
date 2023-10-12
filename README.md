@@ -10,7 +10,7 @@ This is a simple script to convert HAR files to CSV files to quickly import netw
 ## Installation
 
 1. Clone the repository or download the files.
-2. Create a virtual environment with `python -m venv venv` and activate it with `venv\Scripts\activate.bat` on Windows or `source venv/bin/activate` on Linux.
+2. Create a virtual environment with `python -m venv venv` and activate it with `source venv/bin/activate` on WSL2.
 3. Install the requirements with `pip install -r requirements.txt`.
 
 ## Usage
@@ -20,6 +20,7 @@ This is a simple script to convert HAR files to CSV files to quickly import netw
 3. Accept or deny consents if necessary and browse a few pages.
 4. When done, click on the "Export HAR" button at the top of the network tab and save the file in the input_files_har folder.
 5. Repeat steps 1 to 4 for each domain to analyze.
-6. Run the script with the command `python main.py` from the terminal.
-7. The CSV files will be saved in the output_files_csv folder.
-8. Import the CSV files Google Sheets and analyze the data.
+6. Copy the `config.yml.example` file and renamme it to `config.yml`, then adapt the configurations to your needs.
+7. Run the script with the command `python main.py` from the terminal.
+8. A unique CSV file will be saved in the output_files_csv folder.
+9. Import the CSV files Google Sheets and analyze the data.

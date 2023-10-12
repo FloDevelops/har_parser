@@ -1,0 +1,41 @@
+requests:
+  low_risk:
+    domain_patterns:
+      - adviso\.([a-z0-9]+)$
+      - datadome\.co
+      - browser-update\.org
+      - softvoyage\.com
+      - shopify[a-z0-9]*\.com
+      - jquery.com Total
+      - jsdelivr.net Total
+      - stripe[a-z0-9]*\.[a-z0-9]+
+      - fonts[a-z0-9]*\.[a-z0-9]+
+      - paypal[a-z0-9]*\.[a-z0-9]+
+      - privacy-center\.org
+      - captcha-delivery\.com
+    path_patterns:
+      - \.svg
+      - \.jpg
+      - \.png
+      - \.gif
+      - \.woff
+      - \.woff2
+      - \.json
+      - \.css
+      - recaptcha[a-z_]*\.js
+      - jquery[a-z0-9-\.]*\.js
+      - facebook\.com/x/oauth
+      - facebook\.com/[a-z0-9\._/]*plugins/like
+      - facebook\.net[a-zA-Z_/]*(sdk)\.js
+      - fbcdn\.net/rsrc\.php
+
+      
+  medium_risk:
+    domain_patterns:
+      - doubleclick\.net
+      - google[-a-z0-9]*\.[a-z0-9]+
+
+  high_risk:
+    domain_patterns:
+      - googleoptimize\.com
+      
